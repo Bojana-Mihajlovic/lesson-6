@@ -11,10 +11,10 @@
     <link rel="stylesheet" type='text/css' href="css/bootstrap.min.css">
 
 </head>
-    
     <body>
+        <div class="container-fluid">
         <div class='row'>
-            <div class='col-12 border'> 
+            <div class='col-md-12 border'> 
                 <header id="header">
                 
                     <h1> Web Ninja</h1>
@@ -24,12 +24,12 @@
         </div>
 <!-- End Header-->
         <div class='row'>
-            <div class='col-12 border'> 
+            <div class='col-md-12 border'> 
                 <nav id="nav">
                     <ul class="button-wrap">
                         <button> Schedule </button>
-                        <button> CSS </button>
-                        <button> HTML</button>
+                        <button data-toggle="modal" data-target="css3_modal"> CSS </button>
+                        <button data-toggle="modal" data-target="html5_modal"> HTML</button>
                         <button> Responsive Design</button>
                     </ul> 
                 </nav>
@@ -39,10 +39,10 @@
             
             <div class='row max-width'>
         
-               <div class='col-8 border'>
+               <div class='col-md-8 border'>
                     <div id='main-content-wraper'>     
-                        <div class='side-by-side'> 
-                            <section class='image-content'> 
+                        <div class='row'> 
+                            <section class='image-content col-6' > 
                                 <img src="https://sites.psu.edu/kinescfw/files/2016/10/1460220749_headshot_female-2g5w0hj.png"> 
                                 <h4>
                                 <a href="https:google.com">
@@ -67,7 +67,7 @@
                    </div> 
 <!--  End main content wraper   -->
                 </div>
-                    <div class="col-4 border">
+                <div class="col-md-4 border">
                     <div id='aside-content-wraper'> 
                         <aside id='aside-right'> 
                             <h3> Latest work</h3>
@@ -83,26 +83,62 @@
                         </aside>
                     </div>
 <!--end aside-content-wraper-->
-                    </div>
+                </div>
             </div>
 <!-- End of middle-wraper -->
          
-            <div id="favorite-sites" class='row'>
+            <div id="favorite-sites" >
+                <div class="row">
             
-                    <div class='col-4 border'><img src='images/facebook.jpg'> </div>
-                    <div class='col-4 border'> <img src='images/twitter.jpg'>  </div>
-                    <div class='col-4 border'> <img src='images/viber.png'>   </div>
-           
+                    <div class='col-md-4 border'><img class="img-responsive" src='images/facebook.jpg'> </div>
+                    <div class='col-md-4 border'> <img class="img-responsive"  src='images/twitter.jpg'>  </div>
+                    <div class='col-md-4 border'> <img class="img-responsive"  src='images/viber.png'>   </div>
+                </div>
             </div>
        
             <div class="row">
-                <div class="col-12 border">
+                <div class="col-md-12 border">
                     <footer> <h1> Footy  </h1></footer>
                 </div>
             </div>
-        
-<!-- End of container -->
-            
+        </div>       
+<!-- End of container div -->
+<!-- Modal-HTML5-->
+<div class="modal fade" id="html5_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-CSS3 -->
+<div class="modal fade" id="css3_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     <script src="js/main.js"></script> 
     <script src="js/bootstrap.min.js"></script>   
     <script src="js/jquery.min.js"></script>   
