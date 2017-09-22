@@ -214,3 +214,14 @@ footer > h1 {
 #favorite-sites > .row > .col-md-4 > img {
     margin:0;
 }
+.modal-image-css {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-image-html {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
